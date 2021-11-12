@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(#48649f,#385998);
+    border-bottom: 1px solid #253a69;
+}
+.logo {
+    position: absolute;
+    height: 63px;
+    width: 190px;
+    left: 13%;
+    padding: 15px;
+}
+.login_form {
+    display: flex;
+    position: absolute;
+    font-family: Verdana ;
+    left: 58%;
+    top: 15px;
+
+}
+.login_form .email , .login_form .password {
+    padding-left: 10px;
+}
+.login_form .email .font, .login_form .password .font {
+    font-size: 13px;
+    padding-bottom: 4px;
+    color: white;
+}
+.login_form .email input, .login_form .password input {
+    height: 23px;
+    width: 150px;
+    padding-left: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+.login_btn {
+    height: 25px;
+    width: 50px;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: #2d5bba;
+    border: 1px solid #224285;
+}
+.login_btn:hover {
+    background: #385998;
+}
+section {
+    height: 614px;
+    width: 100%;
+    top: 800px;
+    background: linear-gradient(#FDFDFE, #EFF1F6, #E3E6F0, #d6dbea);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo_body {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+
+}
+.logo_body .like_font {
+    font-family: arial;
+    font-size: 25px;
+    margin-left: -30px;
+}
+.logo_body .font1{
+    color: #839878;
+    margin-left: 20px;
+    margin-bottom: 5px;
+
+}
+.signup_body{
+    font-family: Arial;
+    position: absolute;
+    left: 57%;
+}
+.signup_body .acc_crt{
+    font-size: 40px;
+    margin: 25px 0;
+}
+.signup_body .free_hind{
+    margin: 20px 5px;
+    font-size: 18px;
+}
+.signup_body .signup_form input {
+    margin-top: 50px;
+    height: 38px;
+    width: 190px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+.signup_body .signup_form .lastname {
+    margin-left: 15px;
+}
+.signup_body .signup_form .email,
+.signup_body .signup_form .password,
+.signup_body .signup_form .password2{
+    margin-top: 20px;
+    width: 410px;
+}
+.signup_body .signup_form .birthday{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
