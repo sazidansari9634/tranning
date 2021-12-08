@@ -1,4 +1,5 @@
 class Pattern 
+	#  This is display empty space of given length
 	def includeSpace(n) 
 		i = 0
 		while (i < 20) 
@@ -10,9 +11,9 @@ class Pattern
 
 	def printPattern(n) 
 		i = 0
-		#  top line rectangle
+		#  Top Section
 		while (i < n) 
-			self.includeSpace((1 + 40 + i))
+			self.includeSpace((1 + 20 + i))
 			j = 0
 			while (j < 20 ) 
 				print("*")
@@ -23,13 +24,18 @@ class Pattern
 			i += 1
 		end
 
-      
+        
+        
+
+		
+           
+		
 
 	end
 	
 	def printPattern1(n) 
 		i = 0
-		#  single line 
+		#  Top Section
 		while (i < n) 
 			self.includeSpace((1 + 10 + i))
 			k = 0
@@ -43,6 +49,12 @@ class Pattern
 		end
 
         
+        
+
+		
+           
+		
+
 	end
 	
 

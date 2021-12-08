@@ -101,3 +101,77 @@ end
 (10..15).each do|n|
     print n,''
 end
+
+
+#variable
+
+class Customer
+    def initialize(id,name,addr)
+        @cust_id = id
+        @cust_name = name
+        @cust_addr = addr
+    end
+
+    def display_details()
+    puts "Customer id #@cust_id"
+    puts "Customer name #@cust_name"
+    puts "Customer_addr #@cust_addr"
+    end
+
+end
+#create object
+cust1=Customer.new("1","Sultan","PAD")
+cust2=Customer.new("2","Pari","Pad")
+
+#call method
+cust1.display_details()
+cust2.display_details()
+
+
+#Ex1
+a=1
+b=2
+if a > b
+    puts "The value of a is greater than the value of b"
+
+elsif a < b
+    puts "The value of a is less than the value of b"
+
+else
+    puts "athe value of a is equal to the  value of b"
+
+end
+
+# jjk
+
+name1 = "sazidanasari"
+name2 = "suultan"
+
+puts "the name of first 1 index :#{name1}"
+puts 'the name of second 2 index :#{name2}'
+
+#hvj
+val1="This is variable one"
+val2="This is variable one"
+
+puts val1
+puts val2
+# gets stmt
+puts "enter a value"
+val = gets
+puts val
+
+# puts 
+
+str = "Hello Ruby"
+puts str
+#hjhj
+aFile = File.new("input.txt", "r+")
+if aFile
+   aFile.syswrite("ABCDEF")
+   aFile.each_byte {|ch| putc ch; putc ?. }
+else
+   puts "Unable to open file!"
+end
+#jkbjlbl
+File.open("variables.rb") if File::exists?( "variables.rb" )

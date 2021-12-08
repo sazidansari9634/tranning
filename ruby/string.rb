@@ -1,61 +1,49 @@
-x,y,z = 12,36,72
-puts "The value of x is #{x}."
-puts "The value of x and y sum #{x+y}."
-puts "The value of average #{(x+y+z)/3}."
-
-
-#string method uppercase and lowercase
-
-myStr = String .new ("this is test")
-foo =myStr.upcase
-puts "#{foo}"
-
-
-#array
-
-names =Array .new(25)
-puts names.size
-puts names.length
-
-#array 1
-name = Array .new(4,"SAZID")
-puts "#{name}"
-
-#array 2
-nums = Array .new(10) {|e|e=e*2}
-puts "#{nums}"
-#array3
-digits =Array(0..9)
-puts "#{digits}"
-
-#hash create
-months = Hash .new("month")
-puts "#{months[0]}"
-puts "#{months[72]}"
-
-#hash2
-H = Hash["a"=>100 , "b"=>200]
-puts "#{H['a']}"
-puts "#{H['b']}"
-
-#Time
-
-time1 = Time.new
-puts "Current Time : " + time1.inspect
-
-# Time.now is a synonym:
-time2 = Time.now
-puts "Current Time : " + time2.inspect
-
-#array
-ary = [1,2,3,4,5]
-ary.each do |i|
-    puts i 
+class CalculatorFunctions
+    def addNumbers(num1, num2)
+      @n1 = num1
+      @n2 = num2
+      @sum = @n1 + @n2
+      puts @sum
     end
-
-    i = *
-   i in 0..10
-   puts "#{i}"
-end
- #flag
- 
+    def subtractNumbers(num1, num2)
+      @n1 = num1
+      @n2 = num2
+      @difference = @n1 - @n2
+      puts @difference
+    end
+    def multiplyNumbers(num1, num2)
+      @n1 = num1
+      @n2 = num2
+      @product = @n1 * @n2
+      puts @product
+    end
+    def divideNumbers(num1, num2)
+      @n1 = num1
+      @n2 = num2
+      @quotient = @n1 / @n2
+      puts @quotient
+    end
+  end
+  
+  calcFunctions = CalculatorFunctions.new
+  
+  puts "Select a method:\nType 'add' for Addition\nType 'subtract' for Subtraction\nType 'multiply' for Multiplication\nType 'divide' for Division"
+  method = gets
+  
+  puts "Enter the first number:"
+  num1 = gets.to_i
+  
+  puts "Enter the second number:"
+  num2 = gets.to_i
+  
+  if method == "add" or method == "Add"
+    calcFunctions.addNumbers(num1, num2)
+  elsif method == "subtract" or method == "Subtract"
+    calcFunctions.subtractNumbers(num1, num2)
+  elsif method == "multiply" or method == "Multiply"
+    calcFunctions.multiplyNumbers(num1, num2)
+  elsif method == "divide" or method == "Divide"
+    calcFunctions.divideNumbers(num1, num2)
+  else
+    puts "Invalid method"
+  end

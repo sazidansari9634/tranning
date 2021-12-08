@@ -1,0 +1,1 @@
+File.rename("sazid.txt","mytext.txt")
